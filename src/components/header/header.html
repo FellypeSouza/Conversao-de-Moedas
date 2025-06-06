@@ -3,28 +3,34 @@
     <section class="inputs">
 
         <section class="input">
-            <h2>Valor</h2>
             <input type="number"/>
         </section>
 
         <section class="selectFrom">
-            <h2>De</h2>
             <select name="" id="">
-                <option value="">oi</option>
+                <option value="USD">USD</option>
             </select>
         </section>
 
+        <section class="conversionIcon">
+            <h1>⇄</h1>
+        </section>
+
         <section class="selectTo">
-            <h2>Para</h2>
             <select name="" id="">
-                <option value="">oi</option>
+                <option value="BRL">BRL</option>
             </select>
+        </section>
+
+        <section class="conversionButton">
+            <button (click)="teste()">Converter</button>
         </section>
 
     </section>
 
     <section class="conversionResult">
-        <p>resultado</p>
-        <button>Converter</button>
+        @if(datas?.result){
+            <p>{{datas.result}}</p>
+        }
     </section>
 </section>
