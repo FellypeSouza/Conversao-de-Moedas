@@ -1,17 +1,19 @@
 .headerContainer{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 13rem;
     .inputs{
         display: flex;
         align-items: center;
+        justify-content: center;
+        max-width: 1000px;
         .input{
             margin: 1rem;
             input{
                 width: 200px;
+                border: none;
                 padding: 0.55rem;
+                font-size: 1.25rem;
             }
         }
         .selectFrom, .selectTo{
@@ -19,6 +21,8 @@
             select{
                 width: 200px;
                 padding: 0.5rem;
+                border: none;
+                font-size: 1.25rem;
             }
         }
         .conversionButton{
@@ -27,14 +31,41 @@
                 border: none;
                 border-radius: 50px;
                 cursor: pointer;
+                font-size: 1rem;
 
+            }
+            button:hover{
+                background-color: #09203f;
+                transition: all 250ms;
+                color: #fff;
+            }
+            button:not(:hover){
+                transition: all 250ms;
             }
         }
         .conversionIcon{
+            padding: 0.1rem 1rem 0.1rem 1rem;
+            cursor: pointer;
             h1{
                 color: #fff;
                 font-size: 2rem;
             }
+        }
+        .conversionIcon:hover{
+            background-color: #09203f;
+            transition: all 250ms;
+        }
+        .conversionIcon:not(:hover){
+            transition: all 250ms;
+        }
+    }
+    .conversionResult{
+        text-align: center;
+        color: #fff;
+        margin-top: 2rem;
+        h1{
+            font-size: 3rem;
+            font-weight: 400;
         }
     }
     

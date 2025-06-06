@@ -3,34 +3,37 @@
     <section class="inputs">
 
         <section class="input">
-            <input type="number"/>
+            <input type="number" [(ngModel)]="userValueInput"/>
         </section>
-
+ 
         <section class="selectFrom">
-            <select name="" id="">
+            <select name="fromInput" id="" [(ngModel)]="fromInput">
                 <option value="USD">USD</option>
-            </select>
-        </section>
-
-        <section class="conversionIcon">
-            <h1>⇄</h1>
-        </section>
-
-        <section class="selectTo">
-            <select name="" id="">
                 <option value="BRL">BRL</option>
             </select>
         </section>
 
+        <section class="conversionIcon" (click)="switchValues()">
+            <h1>⇄</h1>
+        </section>
+
+        <section class="selectTo">
+            <select name="toInput" id="" [(ngModel)]="toInput">
+                <option value="BRL">BRL</option>
+                <option value="USD">USD</option>
+            </select>
+        </section>
+
         <section class="conversionButton">
-            <button (click)="teste()">Converter</button>
+            <button (click)="conversionRequest()">Converter</button>
         </section>
 
     </section>
 
     <section class="conversionResult">
         @if(datas?.result){
-            <p>{{datas.result}}</p>
+            <h4>{{userValueInput}} {{fromInput}} equivale a</h4>
+            <h1>{{datas.conversion_result}} {{toInput}}</h1>
         }
     </section>
 </section>

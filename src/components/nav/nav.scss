@@ -1,0 +1,25 @@
+$navTextColor:#fff;
+nav{
+    color: $navTextColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    .navTitle{
+
+    }
+    .navLinks{
+        a{
+            color: $navTextColor;
+            text-decoration: none;
+            margin: 1rem;
+        }
+        a:hover{
+            color: #9c9c9c;
+            transition: all 250ms;
+        }
+        a:not(:hover){
+            transition: all 250ms;
+        }
+    }
+}
