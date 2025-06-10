@@ -17,9 +17,6 @@ export class Header {
 
   constructor(private request: Request){}
   
-  switchValues():void{
-    
-  }
   conversionRequest():void{
     if(this.userValueInput <= 0){
       alert("Insira um valor válido");

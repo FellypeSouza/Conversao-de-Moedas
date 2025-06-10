@@ -7,20 +7,36 @@
         </section>
  
         <section class="selectFrom">
-            <select name="fromInput" id="" [(ngModel)]="fromInput">
-                <option value="USD">USD</option>
-                <option value="BRL">BRL</option>
+            <select name="fromInput" [(ngModel)]="fromInput">
+                <option value="BRL">BRL - Real Brasileiro</option>
+                <option value="USD">USD - Dólar Americano</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="JPY">JPY - Iene Japonês</option>
+                <option value="CNY">CNY - Yuan Chinês</option>
+                <option value="AUD">AUD - Dólar Australiano</option>
+                <option value="CAD">CAD - Dólar Canadense</option>
+                <option value="CHF">CHF - Franco Suíço</option>
+                <option value="HKD">HKD - Dólar de Hong Kong</option>
+                <option value="INR">INR - Rupia Indiana</option>
             </select>
         </section>
 
-        <section class="conversionIcon" (click)="switchValues()">
+        <section class="conversionIcon">
             <h1>⇄</h1>
         </section>
 
         <section class="selectTo">
             <select name="toInput" id="" [(ngModel)]="toInput">
-                <option value="BRL">BRL</option>
-                <option value="USD">USD</option>
+                <option value="USD">USD - Dólar Americano</option>
+                <option value="BRL">BRL - Real Brasileiro</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="JPY">JPY - Iene Japonês</option>
+                <option value="CNY">CNY - Yuan Chinês</option>
+                <option value="AUD">AUD - Dólar Australiano</option>
+                <option value="CAD">CAD - Dólar Canadense</option>
+                <option value="CHF">CHF - Franco Suíço</option>
+                <option value="HKD">HKD - Dólar de Hong Kong</option>
+                <option value="INR">INR - Rupia Indiana</option>
             </select>
         </section>
 

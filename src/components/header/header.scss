@@ -68,5 +68,11 @@
             font-weight: 400;
         }
     }
-    
+}
+@media (max-width:950px) {
+    .headerContainer{
+        .inputs{
+            flex-direction: column;
+        }
+    }
 }
