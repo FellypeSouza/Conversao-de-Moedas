@@ -1,6 +1,6 @@
 <section>
   <h1>Conversão de Moedas</h1>
-  <h3>Site para realizar conversões de moedas. Foi feito utilizando Angular / <a href="https://www.exchangerate-api.com/" target="_blank">ExchangeRate API</a></h3>
+  <h3>Site para realizar conversões de moedas. Foi feito utilizando Angular / <a href="https://www.exchangerate-api.com/" target="_blank">ExchangeRate API</a>. Acesse <a href="https://fellypesouza.github.io/Conversao-de-Moedas/" target="_blank">aqui</a>.</h3>
   <section>
     <img src="./src/projectImages/projectImage-1.png"/>
     <img src="./src/projectImages/projectImage_2.png"/>
